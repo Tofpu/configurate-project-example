@@ -1,5 +1,5 @@
 name: ConfigurateExample
-main: io.tofpu.configurateexample.ExamplePlugin
+main: io.tofpu.configurateprojectexample.ExamplePlugin
 version: 1.0.0
 commands:
   example:

@@ -1,6 +1,6 @@
-package io.tofpu.configurateexample.command;
+package io.tofpu.configurateprojectexample.command;
 
-import io.tofpu.configurateexample.config.MyConfiguration;
+import io.tofpu.configurateprojectexample.config.MyConfiguration;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

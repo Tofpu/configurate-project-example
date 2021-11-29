@@ -1,4 +1,4 @@
-package io.tofpu.configurateexample.config;
+package io.tofpu.configurateprojectexample.config;
 
 import org.bukkit.Location;
 import org.spongepowered.configurate.objectmapping.ConfigSerializable;

@@ -1,4 +1,4 @@
-package io.tofpu.configurateexample.serializer;
+package io.tofpu.configurateprojectexample.serializer;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;

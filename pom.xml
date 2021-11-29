@@ -33,11 +33,11 @@
                             <relocations>
                                 <relocation>
                                     <pattern>org.spongepowered</pattern>
-                                    <shadedPattern>io.tofpu.configurateexample.lib.configurate</shadedPattern>
+                                    <shadedPattern>io.tofpu.configurateprojectexample.lib.configurate</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>org.yaml</pattern>
-                                    <shadedPattern>io.tofpu.configurateexample.lib.snake</shadedPattern>
+                                    <shadedPattern>io.tofpu.configurateprojectexample.lib.snake</shadedPattern>
                                 </relocation>
                             </relocations>
                             <filters>

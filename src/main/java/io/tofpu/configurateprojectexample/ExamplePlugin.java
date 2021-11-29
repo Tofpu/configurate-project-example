@@ -1,8 +1,8 @@
-package io.tofpu.configurateexample;
+package io.tofpu.configurateprojectexample;
 
-import io.tofpu.configurateexample.command.CommandManager;
-import io.tofpu.configurateexample.config.MyConfiguration;
-import io.tofpu.configurateexample.serializer.LocationSerializer;
+import io.tofpu.configurateprojectexample.command.CommandManager;
+import io.tofpu.configurateprojectexample.config.MyConfiguration;
+import io.tofpu.configurateprojectexample.serializer.LocationSerializer;
 import org.bukkit.Location;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.spongepowered.configurate.CommentedConfigurationNode;
