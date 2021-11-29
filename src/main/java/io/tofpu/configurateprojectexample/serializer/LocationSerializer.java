@@ -21,11 +21,17 @@ public class LocationSerializer implements TypeSerializer<Location> {
             return null;
         }
 
+        // retrieving the world name
         final String world = node.node("world").getString();
+        // retrieving the x coordinate
         final double x = node.node("x").getDouble();
+        // retrieving the y coordinate
         final double y = node.node("y").getDouble();
+        // retrieving the z coordinate
         final double z = node.node("z").getDouble();
+        // retrieving the location's yaw
         final float yaw = node.node("yaw").getFloat();
+        // retrieving the location's pitch
         final float pitch = node.node("pitch").getFloat();
 
         return new Location(Bukkit.getWorld(world), x, y, z, yaw, pitch);
