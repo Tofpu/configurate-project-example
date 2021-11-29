@@ -1,0 +1,6 @@
+name: ConfigurateExample
+main: io.tofpu.configurateexample.ExamplePlugin
+version: 1.0.0
+commands:
+  example:
+    usage: "Usage: /example [get|set] [number|string|listOfStrings|spawn] [newValue]"

@@ -1,0 +1,13 @@
+number: 20
+
+string: "our very own string"
+
+list: ['OUR', 'VERY', 'OWN', 'LIST']
+
+spawn:
+  world: "world"
+  x: 1
+  y: 10
+  z: 100
+  yaw: 20
+  pitch: 0
