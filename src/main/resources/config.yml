@@ -11,3 +11,6 @@ spawn:
   z: 100
   yaw: 20
   pitch: 0
+
+section:
+  boolean: true

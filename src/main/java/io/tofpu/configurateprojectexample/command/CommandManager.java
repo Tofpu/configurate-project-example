@@ -98,6 +98,17 @@ public class CommandManager implements CommandExecutor {
                     // node.node("spawn").set(player.getLocation());
                 }
                 break;
+            case "boolean":
+                final MyConfiguration.Section section = myConfiguration.getSection();
+                if (retrieve) {
+                    final boolean aBoolean = section.isBoolean();
+                    // final Location spawn = node.node("section", "boolean").getBoolean();
+                    sender.sendMessage(String.format(template, aBoolean));
+                } else {
+                    // setting the boolean depending on the player's input
+                    section.setBoolean(Boolean.parseBoolean(args[2]));
+                    // node.node("section", "boolean").set(Boolean.parseBoolean(args[2]));
+                }
             default:
                 return true;
         }

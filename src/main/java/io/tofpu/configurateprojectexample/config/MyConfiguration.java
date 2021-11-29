@@ -49,4 +49,23 @@ public class MyConfiguration {
     public Location getLocation() {
         return this.location;
     }
+
+    private Section section = new Section();
+
+    public Section getSection() {
+        return this.section;
+    }
+
+    @ConfigSerializable
+    public static class Section {
+        private boolean aBoolean = true;
+
+        public void setBoolean(final boolean aBoolean) {
+            this.aBoolean = aBoolean;
+        }
+
+        public boolean isBoolean() {
+            return this.aBoolean;
+        }
+    }
 }
