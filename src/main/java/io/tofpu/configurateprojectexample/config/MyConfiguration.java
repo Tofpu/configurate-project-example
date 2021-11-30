@@ -19,6 +19,8 @@ public final class MyConfiguration {
         return this.number;
     }
 
+    /**/
+
     private String string = "Our very own string";
 
     public void setString(final String string) {
@@ -29,6 +31,8 @@ public final class MyConfiguration {
         return this.string;
     }
 
+    /**/
+
     private List<String> list = new ArrayList<>();
 
     public void setList(final List<String> list) {
@@ -38,6 +42,8 @@ public final class MyConfiguration {
     public List<String> getList() {
         return this.list;
     }
+
+    /**/
 
     @Setting("spawn")
     private Location location;
@@ -50,11 +56,15 @@ public final class MyConfiguration {
         return this.location;
     }
 
+    /**/
+
     private Section section = new Section();
 
     public Section getSection() {
         return this.section;
     }
+
+    /**/
 
     @ConfigSerializable
     public static final class Section {
