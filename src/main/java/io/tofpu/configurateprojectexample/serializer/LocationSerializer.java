@@ -11,6 +11,13 @@ import org.spongepowered.configurate.serialize.TypeSerializer;
 import java.lang.reflect.Type;
 
 public final class LocationSerializer implements TypeSerializer<Location> {
+    private static final String WORLD = "world";
+    private static final String X = "x";
+    private static final String Y = "y";
+    private static final String Z = "z";
+    private static final String YAW = "yaw";
+    private static final String PITCH = "pitch";
+
     // creating a static instance of location serializer for us to access it anytime
     public static final LocationSerializer INSTANCE = new LocationSerializer();
 
@@ -22,17 +29,17 @@ public final class LocationSerializer implements TypeSerializer<Location> {
         }
 
         // retrieving the world name
-        final String world = node.node("world").getString();
+        final String world = node.node(WORLD).getString();
         // retrieving the x coordinate
-        final double x = node.node("x").getDouble();
+        final double x = node.node(X).getDouble();
         // retrieving the y coordinate
-        final double y = node.node("y").getDouble();
+        final double y = node.node(Y).getDouble();
         // retrieving the z coordinate
-        final double z = node.node("z").getDouble();
+        final double z = node.node(Z).getDouble();
         // retrieving the location's yaw
-        final float yaw = node.node("yaw").getFloat();
+        final float yaw = node.node(YAW).getFloat();
         // retrieving the location's pitch
-        final float pitch = node.node("pitch").getFloat();
+        final float pitch = node.node(PITCH).getFloat();
 
         return new Location(Bukkit.getWorld(world), x, y, z, yaw, pitch);
     }
@@ -47,11 +54,11 @@ public final class LocationSerializer implements TypeSerializer<Location> {
         }
 
         // serializing our location variable here
-        node.node("world").set(world.getName());
-        node.node("x").set(obj.getX());
-        node.node("y").set(obj.getY());
-        node.node("z").set(obj.getZ());
-        node.node("yaw").set(obj.getYaw());
-        node.node("pitch").set(obj.getPitch());
+        node.node(WORLD).set(world.getName());
+        node.node(X).set(obj.getX());
+        node.node(Y).set(obj.getY());
+        node.node(Z).set(obj.getZ());
+        node.node(YAW).set(obj.getYaw());
+        node.node(PITCH).set(obj.getPitch());
     }
 }
