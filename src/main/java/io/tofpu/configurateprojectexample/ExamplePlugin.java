@@ -11,7 +11,7 @@ import org.spongepowered.configurate.yaml.YamlConfigurationLoader;
 
 import java.io.File;
 
-public class ExamplePlugin extends JavaPlugin {
+public final class ExamplePlugin extends JavaPlugin {
     // this handles the aspect of loading/saving files
     private YamlConfigurationLoader loader;
 
@@ -31,7 +31,9 @@ public class ExamplePlugin extends JavaPlugin {
 
         // we're building our loader off the config.yml file
         this.loader = YamlConfigurationLoader.builder()
+                // linking them our config.yml file
                 .file(file)
+                // registering our custom serializer here
                 .defaultOptions(opts -> opts.serializers(build -> build.register(Location.class, LocationSerializer.INSTANCE)))
                 .build();
 
@@ -45,6 +47,7 @@ public class ExamplePlugin extends JavaPlugin {
             e.printStackTrace();
         }
 
+        // registering our "example" command
         getCommand("example").setExecutor(new CommandManager(myConfiguration, node));
     }
 

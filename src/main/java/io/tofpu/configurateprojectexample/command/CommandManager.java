@@ -10,7 +10,7 @@ import org.spongepowered.configurate.CommentedConfigurationNode;
 
 import java.util.*;
 
-public class CommandManager implements CommandExecutor {
+public final class CommandManager implements CommandExecutor {
     private final MyConfiguration myConfiguration;
     private final CommentedConfigurationNode node;
 

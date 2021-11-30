@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @ConfigSerializable
-public class MyConfiguration {
+public final class MyConfiguration {
     private int number = 20;
 
     public void setNumber(final int number) {
@@ -57,7 +57,7 @@ public class MyConfiguration {
     }
 
     @ConfigSerializable
-    public static class Section {
+    public static final class Section {
         private boolean aBoolean = true;
 
         public void setBoolean(final boolean aBoolean) {

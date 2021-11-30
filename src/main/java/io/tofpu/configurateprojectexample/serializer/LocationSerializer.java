@@ -10,13 +10,13 @@ import org.spongepowered.configurate.serialize.TypeSerializer;
 
 import java.lang.reflect.Type;
 
-public class LocationSerializer implements TypeSerializer<Location> {
+public final class LocationSerializer implements TypeSerializer<Location> {
     // creating a static instance of location serializer for us to access it anytime
     public static final LocationSerializer INSTANCE = new LocationSerializer();
 
     @Override
     public Location deserialize(final Type type, final ConfigurationNode node) {
-        // retrieving required information through our node
+        // if the node is empty
         if (node.empty()) {
             return null;
         }
