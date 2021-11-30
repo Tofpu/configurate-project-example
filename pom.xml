@@ -89,11 +89,11 @@
         </dependency>
 
         <!-- SHADING SNAKEYAML DUE TO SERVER'S OUTDATED SNAKEYML -->
-<!--        <dependency>-->
-<!--            <groupId>org.yaml</groupId>-->
-<!--            <artifactId>snakeyaml</artifactId>-->
-<!--            <version>1.27</version>-->
-<!--            <scope>compile</scope>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.27</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 </project>
